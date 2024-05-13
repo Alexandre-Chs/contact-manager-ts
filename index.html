@@ -1,13 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Contact management</title>
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="w-full h-screen bg-background">
+    <div id="app">
+      <div class="px-6 py-4">
+        <h1 class="text-2xl font-bold text-white">Contacts</h1>
+        <div class="mt-2">
+          <button
+            id="add-contact-button"
+            class="px-2 py-1 text-black transition-colors bg-white border-2 border-transparent rounded-md hover:bg-black hover:text-white"
+          >
+            Ajouter un contact
+          </button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
